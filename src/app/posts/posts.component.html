@@ -1,0 +1,25 @@
+<!-- <p>
+  posts works!
+</p> -->
+
+<h1>Posts</h1>
+
+<ul>
+  <li *ngFor="let comment of comments$">
+    <a routerLink="">{{comment.title}}
+    </a>
+    <ul>
+      <li>{{comment.userId}}</li>
+      <!-- <li>
+        <a href="http://{{user.website}}">user.website</a>
+      </li> -->
+    </ul>
+    <p>{{comment.body}}</p>
+  </li>
+</ul>
+
+<!-- <ul>
+  <li><strong>Username:</strong> {{ user$.username }}</li>
+  <li><strong>Email:</strong> {{ user$.email }}</li>
+  <li><strong>Phone:</strong> {{ user$.phone }}</li>
+</ul> -->
